@@ -1,7 +1,7 @@
 <?php
 
-date_default_timezone_set('Australia/Melbourne');
-include 'GIFEncoder.class.php';
+date_default_timezone_set('Europe/Amsterdam');
+include __DIR__ . '\GIFencode.class.php';
 
 
 $time = $_GET['time'];
@@ -21,7 +21,7 @@ $font = array(
 	'angle'=>0,
 	'x-offset'=>10,
 	'y-offset'=>70,
-	'file'=>'DIGITALDREAM.ttf',
+	'file'=>__DIR__ . '\DIGITALDREAM.ttf',
 	'color'=>imagecolorallocate($image, 255, 255, 255),
 );
 for($i = 0; $i <= 60; $i++){
